@@ -1,4 +1,4 @@
-public class  tp8 {
+public class  exemple {
  public static void main (String []args){
 String ch1="Coucou" ;
 String ch2=new String("c'est moi ! \n");

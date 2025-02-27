@@ -7,7 +7,7 @@ public static void main(String[] args) {
 
         
         int nl, nc,i,j,x;
-        boolean=trouve;
+        booleen=trouve;
         do {
             System.out.print("Entrez le nombre de lignes (nl < 50) : ");
             nl = sc.nextInt();
