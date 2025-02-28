@@ -26,7 +26,7 @@ public class exercice1{
                  System.out.println("le noevau est "+ x);
             }
            
-            
+        
         }
 
         
