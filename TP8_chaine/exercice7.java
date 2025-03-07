@@ -9,14 +9,18 @@ public class exercice7 {
            verb= scanner.nextLine();
         }while(!verb.endsWith("er"));
          System.out.println("donner un autre verbe");
-        System.out.println("je" +verb.replace("er", "e"));
-        System.out.println("tu" +verb.replace("er", "es"));
-        System.out.println("il" +verb.replace("er", "e"));
-        System.out.println("elle" +verb.replace("er", "e"));
+        System.out.println("je " +verb.replace("er", "e"));
+        System.out.println("tu " +verb.replace("er", "es"));
+        System.out.println("il " +verb.replace("er", "e"));
+        System.out.println("elle " +verb.replace("er", "e"));
+        if (verb.equals("manger")){
         System.out.println("nous" +verb.replace("er", "ons"));
-        System.out.println("vous" +verb.replace("er", "ez"));
-        System.out.println("ils" +verb.replace("er", "ent"));
-        System.out.println("elles" +verb.replace("er", "ent"));
+        }else if (verb.equals("commencer")){
+          System.out.println(" nous " +verb.replace("cer", "çons"));  
+        }
+        System.out.println("vous " +verb.replace("er", "ez"));
+        System.out.println("ils " +verb.replace("er", "ent"));
+        System.out.println("elles " +verb.replace("er", "ent"));
 
 
 
