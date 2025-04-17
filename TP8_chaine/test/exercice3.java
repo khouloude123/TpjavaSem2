@@ -1,15 +1,26 @@
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
-public class exercice3 {
 
+public class exercice3 {
 
     public static boolean estInf(String verbe) {
         return verbe.endsWith("er") || verbe.endsWith("ir") || verbe.endsWith("re") || verbe.endsWith("oir");
     }
 
     public static String Groupe(String verbe) {
+       
+        List<String> troisiemeGroupeIr = Arrays.asList("sortir", "partir", "dormir", "servir", "mentir", "sentir", "venir", "tenir", "courir", "mourir");
+
         if (verbe.equals("aller")) return "3e groupe";
         if (verbe.endsWith("er")) return "1er groupe";
-        if (verbe.endsWith("ir")) return "2e groupe (si participe présent en -issant)";
+        if (verbe.endsWith("ir")) {
+            if (troisiemeGroupeIr.contains(verbe)) {
+                return "3e groupe";
+            } else {
+                return "2e groupe (si participe présent en -issant)";
+            }
+        }
         return "3e groupe";
     }
 
@@ -17,7 +28,6 @@ public class exercice3 {
         Scanner scanner = new Scanner(System.in);
         String verbe;
 
-      
         do {
             System.out.print("Entrez un verbe à l'infinitif : ");
             verbe = scanner.nextLine().trim().toLowerCase();
